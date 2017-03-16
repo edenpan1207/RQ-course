@@ -19,8 +19,8 @@
                 this is header
             </div>
         </div>
-        <section class="course-content container">
-            <h1>最新課程</h1>
+        <section class="course-content">
+            <h1 class="container">最新課程</h1>
             <hr>
             <div class="center slider">
                 <div class="slick-slide">
@@ -89,25 +89,92 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="input-group input-search">
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="請點此搜尋">
                         <span class="input-group-btn">
-        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-      </span>
+                            <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </span>
                     </div>
                 </div>
+                
+
+<div class="col-sm-12 search-upgrade">
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+  進階搜尋
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">請點選欲搜尋項目</h4>
+      </div>
+      <div class="modal-body">
+      <p>快速搜尋適合自己的訓練項目：</p>
+        <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            課程類型
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">團課</a></li>
+                            <li><a href="#">一對一</a></li>
+                            <li><a href="#">線上一對一</a></li>
+                        </ul>
+                    </div>
+<br>
+                    <p>快速搜尋上課地區：</p>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            地點
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">北部</a></li>
+                            <li><a href="#">中部</a></li>
+                            <li><a href="#">南部</a></li>
+                        </ul>
+                    </div>
+<br>
+                    <p>搜尋適合自己的上課時間：</p>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            月份
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">一月</a></li>
+                            <li><a href="#">二月</a></li>
+                            <li><a href="#">三月</a></li>
+                            <li><a href="#">四月</a></li>
+                            <li><a href="#">五月</a></li>
+                            <li><a href="#">六月</a></li>
+                            <li><a href="#">七月</a></li>
+                            <li><a href="#">八月</a></li>
+                            <li><a href="#">九月</a></li>
+                            <li><a href="#">十月</a></li>
+                            <li><a href="#">十一月</a></li>
+                            <li><a href="#">十二月</a></li>
+                        </ul>
+                    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
             </div>
         </section>
-
         <section class="course-box container">
             <h2>線上一對一 <small> 週計畫</small></h2>
             <div class="row">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
+                        <h3>XYZ計畫</h3>
+                        <div class="card-inform first-lesson">
+                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/uian">羅譽寅 <small> 教練</small></a></span>
                         </div>
                         <ul class="list-group course-list">
                             <li>
@@ -126,17 +193,15 @@
                         </ul>
                         <center>
                             <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
+                            <a href="#" class="btn btn-primary btn-pay">付費上課去</a>
                         </center>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
+                        <h3>ABC計畫</h3>
+                        <div class="card-inform second-lesson">
+                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/hank">陳政翰 <small> 教練</small></a></span>
                         </div>
                         <ul class="list-group course-list">
                             <li>
@@ -155,17 +220,15 @@
                         </ul>
                         <center>
                             <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
+                            <a href="#" class="btn btn-primary btn-pay">付費上課去</a>
                         </center>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
+                        <h3>AAA計畫</h3>
+                        <div class="card-inform third-lesson">
+                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/WenYen">余文彥 <small> 教練</small></a></span>
                         </div>
                         <ul class="list-group course-list">
                             <li>
@@ -183,8 +246,8 @@
                             </li>
                         </ul>
                         <center>
-                            <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
+                            <a href="#" class="btn btn-default">了解更多</a>
+                            <a href="#" class="btn btn-primary btn-pay">付費上課去</a>
                         </center>
                     </div>
                 </div>
@@ -193,13 +256,11 @@
         <section class="course-box container">
             <h2>一對一課程</h2>
             <div class="row">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
+                        <h3>A訓練計畫</h3>
+                        <div class="card-inform first-lesson">
+                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/uian">羅譽寅 <small> 教練</small></a></span>
                         </div>
                         <ul class="list-group course-list">
                             <li>
@@ -218,17 +279,15 @@
                         </ul>
                         <center>
                             <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
+                            <a href="#" class="btn btn-primary btn-pay">付費上課去</a>
                         </center>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
+                        <h3>B訓練計畫</h3>
+                        <div class="card-inform forth-lesson">
+                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/mona">陳嬿婷 <small> 教練</small></a></span>
                         </div>
                         <ul class="list-group course-list">
                             <li>
@@ -247,36 +306,7 @@
                         </ul>
                         <center>
                             <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
-                        </center>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
-                        </div>
-                        <ul class="list-group course-list">
-                            <li>
-                                <ul>
-                                    <li>個人化線上訓練計畫</li>
-                                    <br>
-                                    <li>按個人需求調整課表（頻率最高為每週一次）</li>
-                                    <br>
-                                    <li>訓練記錄分析與回饋（每天一次，如有需要）</li>
-                                    <br>
-                                    <li>訓練相關問題諮詢（不限次數）</li>
-                                    <br>
-                                    <li>比賽準備建議與配速策略分析</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <center>
-                            <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
+                            <a href="#" class="btn btn-primary btn-pay">付費上課去</a>
                         </center>
                     </div>
                 </div>
@@ -285,13 +315,11 @@
         <section class="course-box container">
             <h2>團課</h2>
             <div class="row">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
+                        <h3>Running Club</h3>
+                        <div class="card-inform first-lesson">
+                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/uian">羅譽寅 <small> 教練</small></a></span>
                         </div>
                         <ul class="list-group course-list">
                             <li>
@@ -310,36 +338,7 @@
                         </ul>
                         <center>
                             <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
-                        </center>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="my-course-card">
-                        <div class="card-inform">
-                            <h3>XYZ計畫</h3>
-                            <span class="card-price">NT$ 1,000 / 週</span>
-                            <hr>
-                            <span>羅譽寅 / 教練</span>
-                        </div>
-                        <ul class="list-group course-list">
-                            <li>
-                                <ul>
-                                    <li>個人化線上訓練計畫</li>
-                                    <br>
-                                    <li>按個人需求調整課表（頻率最高為每週一次）</li>
-                                    <br>
-                                    <li>訓練記錄分析與回饋（每天一次，如有需要）</li>
-                                    <br>
-                                    <li>訓練相關問題諮詢（不限次數）</li>
-                                    <br>
-                                    <li>比賽準備建議與配速策略分析</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <center>
-                            <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
-                            <a href="#" class="btn btn-primary">付費上課去</a>
+                            <a href="#" class="btn btn-primary btn-pay">付費上課去</a>
                         </center>
                     </div>
                 </div>

@@ -4,3 +4,9 @@
     border-bottom: 5px solid #f05f40;
     padding-bottom: 5px;
 }
+
+@mixin bg-image {
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
