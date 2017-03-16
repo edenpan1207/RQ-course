@@ -62,6 +62,14 @@ section {
     }
 }
 
+.btn-custom {
+    background-color: #37761D;
+    border: 1px solid #37761D;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .search-upgrade {
     display: none;
     @include ipad {
