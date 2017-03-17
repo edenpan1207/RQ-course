@@ -165,3 +165,139 @@ section {
     padding: 10px 0;
     border-bottom: 1px solid #D5D8DC;
     font-size: 14px; }
+
+.top-photo {
+  background-image: url(http://d3184h1qivcvfe.cloudfront.net/index.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  min-height: auto; }
+  @media (max-width: 568px) {
+    .top-photo {
+      background-position: 25% top; } }
+  .top-photo h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 5px gray;
+    color: #fff;
+    padding-top: 130px;
+    padding-bottom: 130px; }
+
+.service-content .panel-title {
+  font-weight: bold; }
+
+.service-content .panel-body ul {
+  line-height: 1.5em; }
+  .service-content .panel-body ul li {
+    margin-bottom: 10px; }
+
+.date-content h2 {
+  margin: 0;
+  padding-left: 5px;
+  padding-bottom: 20px; }
+
+.date-content ul {
+  list-style: none;
+  margin-top: -10px;
+  padding: 0;
+  margin-left: 10px;
+  padding-bottom: 80px; }
+  .date-content ul i {
+    display: none; }
+    @media (max-width: 768px) {
+      .date-content ul i {
+        display: inline-block;
+        padding-top: 18px;
+        padding-right: 15px; } }
+  @media (max-width: 768px) {
+    .date-content ul span {
+      display: none; } }
+
+/* arrow for step process */
+.arrow {
+  float: left;
+  width: 25%;
+  height: 50px;
+  background-color: rgba(55, 118, 29, 0.3);
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 45px; }
+  .arrow > a {
+    display: block;
+    text-decoration: none;
+    color: #37761D;
+    font-size: 15px;
+    font-weight: bold; }
+  @media (max-width: 568px) {
+    .arrow {
+      width: 17%; } }
+
+.arrow:after {
+  content: '';
+  position: absolute;
+  right: -22px;
+  top: 30%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 12px solid rgba(55, 118, 29, 0.3); }
+
+.arrow-active {
+  background-color: rgba(55, 118, 29, 0.7); }
+  .arrow-active > a {
+    color: #fff; }
+
+.arrow-active:after {
+  border-left: 12px solid rgba(55, 118, 29, 0.7); }
+
+.arrow-none:after {
+  border: 0; }
+
+.cursor-not-allow {
+  cursor: not-allowed; }
+
+.cursor-initial {
+  cursor: default; }
+
+.target-select > h3 {
+  font-size: 28px;
+  font-weight: bold; }
+  .target-select > h3 small {
+    color: red; }
+
+.target-select .form-qa {
+  padding-top: 10px; }
+  .target-select .form-qa label {
+    font-size: 15px; }
+
+.target-select .target-time {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: relative; }
+
+.target-select .next-step {
+  width: 100%;
+  background-color: #37761d;
+  border: 1px solid #37761d;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 50px;
+  color: #fff;
+  font-weight: bold; }
+  .target-select .next-step:hover {
+    background-color: #459725;
+    border: 1px solid #459725; }
+
+.ui-widget-header {
+  border: 1px solid #37761D;
+  background-color: #37761D !important; }

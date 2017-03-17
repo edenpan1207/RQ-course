@@ -1,3 +1,4 @@
+// this is reset
 * {
     box-sizing: border-box;
 }
@@ -16,6 +17,7 @@ section {
     padding-bottom: 25px;
 }
 
+// this is index.html
 .course-content {
     padding-left: 30px;
     padding-right: 30px;
@@ -31,15 +33,13 @@ section {
         width: 350px;
     }
     @include l-phone {
-        width:  220px;
+        width: 220px;
         margin: 12px 6px;
     }
     img {
         width: 100%;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-        @include ipad {
-
-        }
+        @include ipad {}
         @include l-phone {}
     }
 }
@@ -90,8 +90,6 @@ section {
         }
     }
 }
-
-
 
 .course-box {
     padding-bottom: 80px;
@@ -153,32 +151,28 @@ section {
 
 .first-lesson {
     background-image: url(../img/uian.jpg);
-    @include bg-image
-    @include ipad {
+    @include bg-image @include ipad {
         height: 400px;
     }
 }
 
 .second-lesson {
     background-image: url(../img/hankcoach.jpg);
-    @include bg-image
-     @include ipad {
+    @include bg-image @include ipad {
         height: 400px;
     }
 }
 
 .third-lesson {
     background-image: url(../img/wenyen2.jpg);
-    @include bg-image
-     @include ipad {
+    @include bg-image @include ipad {
         height: 400px;
     }
 }
 
 .forth-lesson {
     background-image: url(../img/coachS_Mona.jpg);
-    @include bg-image
-     @include ipad {
+    @include bg-image @include ipad {
         height: 400px;
     }
 }
@@ -198,4 +192,176 @@ section {
             }
         }
     }
+}
+
+// this is date.html's original status
+.top-photo {
+    background-image: url(http://d3184h1qivcvfe.cloudfront.net/index.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    min-height: auto;
+    @include l-phone {
+        background-position: 25% top;
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 3px 3px 5px gray;
+        color: #fff;
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+}
+
+.service-content {
+    .panel-title {
+        font-weight: bold;
+    }
+    .panel-body {
+        ul {
+            line-height: 1.5em;
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.date-content {
+    h2 {
+        margin: 0;
+        padding-left: 5px;
+        padding-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        margin-top: -10px;
+        padding: 0;
+        margin-left: 10px;
+        padding-bottom: 80px;
+        i {
+            display: none;
+            @include ipad {
+                display: inline-block;
+                padding-top: 18px;
+                padding-right: 15px;
+            }
+        }
+        span {
+            @include ipad {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/* arrow for step process */
+
+.arrow {
+    float: left;
+    width: 25%;
+    height: 50px;
+    background-color: rgba(55, 118, 29, 0.3);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 45px;
+    >a {
+        //
+        display: block;
+        text-decoration: none;
+        color: #37761D;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    @include l-phone {
+        width: 17%;
+    }
+}
+
+.arrow:after {
+    content: '';
+    position: absolute;
+    right: -22px;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left: 12px solid rgba(55, 118, 29, 0.3);
+}
+
+.arrow-active {
+    background-color: rgba(55, 118, 29, 0.7);
+    > a {
+        color: #fff;
+    }
+}
+
+.arrow-active:after {
+    border-left: 12px solid rgba(55, 118, 29, 0.7);
+}
+
+.arrow-none:after {
+    border: 0;
+}
+
+.cursor-not-allow {
+    @include notAllowed
+}
+
+.cursor-initial {
+    cursor: default;
+}
+
+.target-select {
+    > h3 {
+        font-size: 28px;
+        font-weight: bold;
+        small {
+            color: red;
+        }
+    }
+    .form-qa {
+        padding-top: 10px;
+         label {
+            font-size: 15px;
+        }
+    }
+    .target-time {
+        display: inline-block;
+        padding: 10px 30px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        position: relative;
+    }
+    .next-step {
+        width: 100%;
+        background-color: rgba(55, 118, 29, 1);
+        border: 1px solid rgba(55, 118, 29, 1);
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-top: 50px;
+        color: #fff;
+        font-weight: bold;
+        &:hover {
+            background-color: #459725;
+            border: 1px solid #459725;
+        }
+    }
+    
+}
+
+// jquery ui's datepicker color
+.ui-widget-header {
+    border: 1px solid $rqcolor;
+    background-color: $rqcolor !important;
 }
