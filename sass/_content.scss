@@ -233,6 +233,23 @@ section {
     }
 }
 
+.check-register {
+    background-image: url(../img/register.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    > p {
+        padding: 230px 30px;
+        font-size: 28px;
+        font-weight: bold;
+        color: $rqcolor;
+        text-align: center;
+        @include l-phone {
+            font-size: 22px;
+        }
+    }
+}
+
 .date-content {
     h2 {
         margin: 0;
@@ -328,11 +345,15 @@ section {
         font-weight: bold;
         small {
             color: red;
+            @include ipad {
+                display: block;
+                padding-top: 10px;
+            }
         }
     }
     .form-qa {
         padding-top: 10px;
-         label {
+        label {
             font-size: 15px;
         }
     }
@@ -357,7 +378,26 @@ section {
             border: 1px solid #459725;
         }
     }
-    
+}
+
+.check-apply {
+    .panel {
+        background-image: url(../img/apply.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left center;
+        width: 100%;
+        > p {
+            padding: 150px 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: $rqcolor;
+            text-align: center;
+            @include l-phone {
+                font-size: 22px;
+            }
+        }
+    }
 }
 
 // jquery ui's datepicker color

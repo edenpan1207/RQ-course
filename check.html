@@ -41,6 +41,7 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- 正常申請流程 -->
                     <div class="col-sm-12 target-select">
                         <h3>step3. 確認申請資訊 <small> 感謝您的耐心填寫，以下為您的申請資訊，請確認後再送出。</small></h3>
                         <div class="panel panel-default">
@@ -64,9 +65,30 @@
                                 </ul>
                             </div>
                         </div>
-                        <input type="checkbox" id="checkbox-submit" calss="check-submit"/> 申請即代表您同意教練可觀看您的個人訓練資料
-
-                        <input type="submit" id="submit" class="next-step" value="下一步" id="submitBtn" disabled="disabled" style="opacity: 0.5;"/>
+                        <input type="checkbox" id="checkbox-submit" calss="check-submit" /> 申請即代表您同意教練可觀看您的個人訓練資料
+                        <input type="submit" id="submit" class="next-step" value="下一步" id="submitBtn" disabled="disabled" style="opacity: 0.5;" />
+                    </div>
+                    <!-- 申請審核中 -->
+                    <div class="col-sm-12 target-select check-apply img-responsive">
+                        <h3>step3. 確認申請資訊 <small> 申請審核中...</small></h3>
+                        <div class="panel panel-default">
+                            <p>您的申請目前正在審核中，請耐心等候，造成您的不便請見諒</p>
+                        </div>
+                    </div>
+                    <!-- 通過審核->付款 -->
+                    <div class="col-sm-12 target-select check-apply img-responsive">
+                        <h3>step3. 確認申請資訊</h3>
+                        <div class="panel panel-default">
+                            <p>恭喜您，您的申請已經通過指定教練的審核囉！請點選下一步進行付款吧</p>
+                        </div>
+                        <input type="submit" id="submit" class="next-step" value="下一步 (付款)" id="submitBtn" disabled="disabled" style="opacity: 0.5;" />
+                    </div>
+                    <!-- 服務中... -->
+                    <div class="col-sm-12 target-select check-apply img-responsive">
+                        <h3>step3. 確認申請資訊 <small> 您的訓練已開始...</small></h3>
+                        <div class="panel panel-default">
+                            <p>您的訓練已開始，快回到<a href="https://www.runningquotient.com/analytics/all">首頁</a>繼續進行吧...</p>
+                        </div>
                     </div>
                 </div>
             </div>
