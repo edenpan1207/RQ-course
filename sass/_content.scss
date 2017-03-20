@@ -195,36 +195,21 @@ section {
 }
 
 // this is date.html's original status
-.top-photo {
-    background-image: url(http://d3184h1qivcvfe.cloudfront.net/index.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    min-height: auto;
-    @include l-phone {
-        background-position: 25% top;
-    }
-    h1 {
-        font-size: 48px;
-        font-weight: bold;
-        text-align: center;
-        text-shadow: 3px 3px 5px gray;
-        color: #fff;
-        padding-top: 130px;
-        padding-bottom: 130px;
-    }
-}
 
 .service-content {
     .panel-title {
         font-weight: bold;
     }
     .panel-body {
+        h3 {
+            font-size: 18px;
+            display: inline;
+            border-bottom: 2px solid #37761d;
+            padding-bottom: 2px;
+        }
         ul {
+            margin-bottom: 20px;
+            padding-top: 20px;
             line-height: 1.5em;
             li {
                 margin-bottom: 10px;
@@ -233,28 +218,14 @@ section {
     }
 }
 
-.check-register {
-    background-image: url(../img/register.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;
-    > p {
-        padding: 230px 30px;
-        font-size: 28px;
-        font-weight: bold;
-        color: $rqcolor;
-        text-align: center;
-        @include l-phone {
-            font-size: 22px;
-        }
-    }
-}
+
 
 .date-content {
     h2 {
         margin: 0;
         padding-left: 5px;
         padding-bottom: 20px;
+        letter-spacing: 5px;
     }
     ul {
         list-style: none;
@@ -283,25 +254,39 @@ section {
 
 .arrow {
     float: left;
-    width: 25%;
+    width: 22%;
     height: 50px;
     background-color: rgba(55, 118, 29, 0.3);
     border-radius: 5px 5px 0 0;
     position: relative;
-    margin-right: 30px;
+    margin-right: 18px;
     margin-bottom: 20px;
     text-align: center;
     line-height: 45px;
     >a {
-        //
         display: block;
         text-decoration: none;
         color: #37761D;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
+        padding: 0 12px;
+
+        > i {
+            padding-left: 15px;
+        }
     }
-    @include l-phone {
-        width: 17%;
+    @media(max-width:990px) {
+        width: 21%;
+    }
+
+    @media(max-width:512px) {
+        width: 18%;
+    }
+    @include m-phone {
+        > a {
+            padding: 0;
+        }
+
     }
 }
 
@@ -339,17 +324,14 @@ section {
     cursor: default;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .target-select {
     > h3 {
         font-size: 28px;
         font-weight: bold;
-        small {
-            color: red;
-            @include ipad {
-                display: block;
-                padding-top: 10px;
-            }
-        }
     }
     .form-qa {
         padding-top: 10px;
@@ -365,12 +347,12 @@ section {
         position: relative;
     }
     .next-step {
-        width: 100%;
+        width: 97%;
         background-color: rgba(55, 118, 29, 1);
         border: 1px solid rgba(55, 118, 29, 1);
         border-radius: 10px;
         padding: 5px 10px;
-        margin-top: 50px;
+        margin-top: 20px;
         color: #fff;
         font-weight: bold;
         &:hover {
@@ -378,27 +360,17 @@ section {
             border: 1px solid #459725;
         }
     }
-}
-
-.check-apply {
+    .btn-submit {
+        margin-top: 50px;
+    }
+    .alert {
+        width: 97%;
+    }
     .panel {
-        background-image: url(../img/apply.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left center;
-        width: 100%;
-        > p {
-            padding: 150px 30px;
-            font-size: 28px;
-            font-weight: bold;
-            color: $rqcolor;
-            text-align: center;
-            @include l-phone {
-                font-size: 22px;
-            }
-        }
+        width: 97%;
     }
 }
+
 
 // jquery ui's datepicker color
 .ui-widget-header {
