@@ -68,7 +68,16 @@ section {
   padding-right: 10px; }
 
 .course-box {
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  /*> ul {
+        list-style: none;
+         padding: 0;
+        .col-xs-6 {
+            @include l-phone {
+                width: 100%;
+            }
+        }
+    }*/ }
   .course-box h2 {
     display: inline;
     font-size: 36px;
@@ -77,12 +86,6 @@ section {
     @media (max-width: 568px) {
       .course-box h2 {
         font-size: 28px; } }
-  .course-box > ul {
-    list-style: none;
-    padding: 0; }
-    @media (max-width: 568px) {
-      .course-box > ul .col-xs-6 {
-        width: 100%; } }
 
 .my-course-card {
   margin-top: 20px;

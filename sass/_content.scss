@@ -88,15 +88,15 @@ section {
             font-size: 28px;
         }
     }
-    > ul {
+    /*> ul {
         list-style: none;
-        padding: 0;
+         padding: 0;
         .col-xs-6 {
             @include l-phone {
                 width: 100%;
             }
         }
-    }
+    }*/
 }
 
 .my-course-card {
