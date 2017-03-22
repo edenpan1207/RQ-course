@@ -12,15 +12,12 @@ section {
   padding-top: 25px;
   padding-bottom: 25px; }
 
-.course-content {
-  padding-left: 30px;
-  padding-right: 30px; }
-  .course-content .slider {
-    margin: 20px auto; }
+.course-content .slider {
+  margin: 20px auto; }
 
 .slick-slide {
   margin: 12px;
-  width: 350px; }
+  width: 330px; }
   @media (max-width: 768px) {
     .slick-slide {
       width: 350px; } }
@@ -36,13 +33,21 @@ section {
 .slick-next:before {
   color: black;
   font-size: 24px; }
+  @media (max-width: 768px) {
+    .slick-prev:before,
+    .slick-next:before {
+      display: none; } }
 
 .course-search {
-  display: inline-block;
   margin-right: 10px; }
-  .course-search button {
-    padding-left: 30px;
-    padding-right: 30px; }
+  .course-search select {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin-right: 10px;
+    cursor: pointer; }
+    .course-search select option {
+      font-size: 16px; }
   @media (max-width: 768px) {
     .course-search {
       display: none; } }
@@ -59,13 +64,22 @@ section {
   @media (max-width: 768px) {
     .search-upgrade {
       display: block;
-      float: right;
-      padding-top: 10px; } }
+      padding-top: 5px; } }
+  .search-upgrade > button {
+    width: 100%; }
   .search-upgrade .modal-body > p {
     display: inline-block; }
   .search-upgrade .modal-body .dropdown {
     display: inline-block;
     margin-bottom: 10px; }
+    .search-upgrade .modal-body .dropdown select {
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 5px 30px;
+      margin-right: 10px;
+      cursor: pointer; }
+      .search-upgrade .modal-body .dropdown select option {
+        font-size: 16px; }
     @media (max-width: 414px) {
       .search-upgrade .modal-body .dropdown {
         display: block; } }
@@ -165,6 +179,12 @@ section {
     padding: 10px 0;
     border-bottom: 1px solid #D5D8DC;
     font-size: 14px; }
+
+.course-detail {
+  list-style: none;
+  font-size: 16px; }
+  .course-detail li {
+    padding: 3px 0; }
 
 .service-content .panel-title {
   font-weight: bold; }
@@ -267,7 +287,7 @@ section {
   cursor: pointer; }
 
 .target-select > h3 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold; }
 
 .target-select .form-qa {

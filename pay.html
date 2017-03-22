@@ -21,12 +21,12 @@
                 this is header
             </div>
         </div>
-        <section class="container">
+        <section class="container top-photo">
             <h1>申請XYZ 線上一對一 <small> 週期化訓練</small></h1>
             <hr>
         </section>
 
-        <!-- 正常申請流程 -->
+        <!-- 審核通過待付款 -->
         <section class="container service-content">
             <div class="row">
                 <div class="col-sm-4">
@@ -54,42 +54,62 @@
                     <div class="date-content">
                         <h2>申請流程</h2>
                         <ul>
-                            <li class="arrow arrow-active">
-                                <a class="cursor-initial"><i class="fa fa-calendar" aria-hidden="true"></i><span>選擇目標日期</span></a>
+                            <li class="arrow">
+                                <a class="cursor-not-allow"><i class="fa fa-heartbeat" aria-hidden="true"></i><span>選擇目標日期</span></a>
                             </li>
                             <li class="arrow">
-                                <a class="cursor-not-allow"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>填寫問券</span></a>
+                                <a class="cursor-not-allow"><i class="fa fa-trophy" aria-hidden="true"></i><span>填寫問券</span></a>
                             </li>
                             <li class="arrow">
                                 <a class="cursor-not-allow"><i class="fa fa-key" aria-hidden="true"></i><span>待審核</span></a>
                             </li>
-                            <li class="arrow arrow-none">
-                                <a class="cursor-not-allow"><i class="fa fa-credit-card" aria-hidden="true"></i><span>付款</span></a>
+                            <li class="arrow arrow-none arrow-active">
+                                <a class="cursor-initial"><i class="fa fa-credit-card" aria-hidden="true"></i><span>付款</span></a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-12 target-select">
-                        <h3>步驟一：請選擇目標日期</h3>
-                        <form action="https://www.runningquotient.com/analytics/all">
-                            <input type="text" id="datepicker" name="target-time" class="target-time" placeholder="請點選此處確認日期...">
-                            <input type="submit" id="submit" class="next-step btn-submit" value="下一步">
+                        <h3>步驟四：申請已審核通過</h3>
+                        <div class="alert alert-success" role="alert">恭喜您，您的申請已經通過指定教練的審核囉！請點選<a href="#" class="alert-link">下一步</a>進行付款吧</div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">申請資訊</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li>申請人：xxx</li>
+                                    <li>申請日期：2017/03/05</li>
+                                    <li>目標日期：2017/09/05</li>
+                                    <li>問題答覆
+                                        <ul>
+                                            <li>問題一：.........</li>
+                                            <li>問題二：.........</li>
+                                            <li>問題三：.........</li>
+                                        </ul>
+                                    </li>
+                                    <li>教練：xxx</li>
+                                    <li>總金額：NT$15,000</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <input type="submit" id="submit" class="next-step" value="下一步" id="submitBtn" />
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 已申請過其他課程看到畫面 -->
+        <!-- 服務中請回首頁 -->
         <section class="container service-content">
             <div class="row">
                 <div class="col-sm-4">
                 </div>
                 <div class="col-sm-8">
                     <div class="col-sm-12 target-select">
-                        <div class="alert alert-danger" role="alert">您已選擇其他教練，請點選以下按鈕回到首頁繼續訓練</div>
+                        <div class="alert alert-info" role="alert">您的訓練已開始，快回到<a href="https://www.runningquotient.com/analytics/all" class="alert-link">首頁</a>繼續進行吧...</div>
                         <form action="https://www.runningquotient.com/analytics/all">
-                            <input type="text" id="datepicker" name="target-time" class="target-time" placeholder="請點選此處確認日期..." disabled="disable" style="cursor: not-allowed;">
-                            <input type="submit" id="submit" class="next-step btn-submit" value="回到首頁">
+                            <input type="submit" id="submit" class="next-step" value="回首頁" id="submitBtn" />
                         </form>
                     </div>
                 </div>

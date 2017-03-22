@@ -19,8 +19,6 @@ section {
 
 // this is index.html
 .course-content {
-    padding-left: 30px;
-    padding-right: 30px;
     .slider {
         margin: 20px auto;
     }
@@ -28,7 +26,7 @@ section {
 
 .slick-slide {
     margin: 12px;
-    width: 350px;
+    width: 330px;
     @include ipad {
         width: 350px;
     }
@@ -48,14 +46,22 @@ section {
 .slick-next:before {
     color: black;
     font-size: 24px;
+    @include ipad {
+        display: none;
+    }
 }
 
 .course-search {
-    display: inline-block;
     margin-right: 10px;
-    button {
-        padding-left: 30px;
-        padding-right: 30px;
+    select {
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 5px 30px;
+        margin-right: 10px;
+        cursor: pointer;
+        option {
+            font-size: 16px;
+        }
     }
     @include ipad {
         display: none;
@@ -74,8 +80,10 @@ section {
     display: none;
     @include ipad {
         display: block;
-        float: right;
-        padding-top: 10px;
+        padding-top: 5px;
+    }
+    > button {
+        width: 100%;
     }
     .modal-body {
         > p {
@@ -84,6 +92,16 @@ section {
         .dropdown {
             display: inline-block;
             margin-bottom: 10px;
+            select {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px 30px;
+                margin-right: 10px;
+                cursor: pointer;
+                option {
+                    font-size: 16px;
+                }
+            }
             @include m-phone {
                 display: block;
             }
@@ -194,8 +212,15 @@ section {
     }
 }
 
-// this is date.html's original status
+.course-detail {
+    list-style: none;
+    font-size: 16px;
+    li {
+        padding: 3px 0;
+    }
+}
 
+// this is date.html's original status
 .service-content {
     .panel-title {
         font-weight: bold;
@@ -217,8 +242,6 @@ section {
         }
     }
 }
-
-
 
 .date-content {
     h2 {
@@ -270,7 +293,6 @@ section {
         font-size: 14px;
         font-weight: bold;
         padding: 0 12px;
-
         > i {
             padding-left: 15px;
         }
@@ -278,7 +300,6 @@ section {
     @media(max-width:990px) {
         width: 21%;
     }
-
     @media(max-width:512px) {
         width: 18%;
     }
@@ -286,7 +307,6 @@ section {
         > a {
             padding: 0;
         }
-
     }
 }
 
@@ -330,7 +350,7 @@ section {
 
 .target-select {
     > h3 {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: bold;
     }
     .form-qa {
@@ -370,7 +390,6 @@ section {
         width: 97%;
     }
 }
-
 
 // jquery ui's datepicker color
 .ui-widget-header {
