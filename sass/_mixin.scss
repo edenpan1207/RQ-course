@@ -1,22 +1,29 @@
 $rqcolor: #37761D;
-
 @mixin course-title {
-	display: inline;
+    display: inline;
     font-size: 36px;
     border-bottom: 5px solid #f05f40;
     padding-bottom: 5px;
 }
 
 @mixin bg-image {
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 }
 
 @mixin notAllowed {
-	cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 @mixin aHover {
-	border-bottom: 5px solid #37761D;
+    border-bottom: 5px solid #37761D;
+}
+
+@mixin selectOp {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin-right: 10px;
+    cursor: pointer;
 }

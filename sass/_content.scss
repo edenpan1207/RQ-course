@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Microsoft JhengHei;
+    font-family: 'Microsoft JhengHei';
 }
 
 .wrap {
@@ -55,18 +55,20 @@ section {
 
 .course-search {
     margin-right: 10px;
+    > span {
+        display: block;
+        font-size: 18px;
+    }
     select {
-        border: 1px solid gray;
-        border-radius: 5px;
-        padding: 5px 30px;
-        margin-right: 10px;
-        cursor: pointer;
+        @include selectOp
+        @include l-phone {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
         option {
             font-size: 16px;
         }
-    }
-    @include ipad {
-        display: none;
     }
 }
 
@@ -76,39 +78,6 @@ section {
     color: #fff;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.search-upgrade {
-    display: none;
-    @include ipad {
-        display: block;
-        padding-top: 5px;
-    }
-    > button {
-        width: 100%;
-    }
-    .modal-body {
-        > p {
-            display: inline-block;
-        }
-        .dropdown {
-            display: inline-block;
-            margin-bottom: 10px;
-            select {
-                border: 1px solid gray;
-                border-radius: 5px;
-                padding: 5px 30px;
-                margin-right: 10px;
-                cursor: pointer;
-                option {
-                    font-size: 16px;
-                }
-            }
-            @include m-phone {
-                display: block;
-            }
-        }
-    }
 }
 
 .course-box {
@@ -250,12 +219,18 @@ section {
             border-bottom: 2px solid #37761d;
             padding-bottom: 2px;
         }
+        > span {
+            display: block;
+            padding-top: 10px;
+            color: #37761d;
+            font-weight: bold;
+        }
         ul {
             margin-bottom: 20px;
-            padding-top: 20px;
-            line-height: 1.5em;
+            padding-top: 10px;
+            line-height: 1.3em;
             li {
-                margin-bottom: 10px;
+                margin-bottom: 5px;
             }
         }
     }
