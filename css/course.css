@@ -28,11 +28,14 @@ section {
   .slick-slide img {
     width: 100%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25); }
+    .slick-slide img:hover {
+      transition: all 0.5s;
+      opacity: 0.8; }
 
 .slick-prev:before,
 .slick-next:before {
   color: black;
-  font-size: 24px; }
+  font-size: 25px; }
   @media (max-width: 768px) {
     .slick-prev:before,
     .slick-next:before {
@@ -91,6 +94,12 @@ section {
     font-size: 36px;
     border-bottom: 5px solid #f05f40;
     padding-bottom: 5px; }
+  .course-box > ul {
+    list-style: none;
+    padding: 0; }
+    @media (max-width: 568px) {
+      .course-box > ul .col-xs-6 {
+        width: 100%; } }
 
 .my-course-card {
   margin-top: 20px;
@@ -98,12 +107,16 @@ section {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 0.95); }
   .my-course-card h3 {
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    text-shadow: 2px 2px 3px gray; }
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px gray; }
+    .my-course-card h3 a {
+      color: #37761d; }
+    @media (max-width: 768px) {
+      .my-course-card h3 {
+        font-size: 26px; } }
   .my-course-card center a {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -135,48 +148,40 @@ section {
 
 .first-lesson {
   background-image: url(../img/uian.jpg);
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; }
-  @media (max-width: 768px) {
-    .first-lesson {
-      height: 400px; } }
 
 .second-lesson {
   background-image: url(../img/hankcoach.jpg);
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; }
-  @media (max-width: 768px) {
-    .second-lesson {
-      height: 400px; } }
 
 .third-lesson {
   background-image: url(../img/wenyen2.jpg);
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; }
-  @media (max-width: 768px) {
-    .third-lesson {
-      height: 400px; } }
 
 .forth-lesson {
   background-image: url(../img/coachS_Mona.jpg);
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; }
-  @media (max-width: 768px) {
-    .forth-lesson {
-      height: 400px; } }
 
 .course-list {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 5px;
   padding-right: 30px; }
   .course-list > li > ul > li {
     display: inline-block;
-    list-style-type: circle;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #D5D8DC;
     font-size: 14px; }
 
@@ -185,6 +190,10 @@ section {
   font-size: 16px; }
   .course-detail li {
     padding: 3px 0; }
+
+.course-default {
+  line-height: 1em;
+  padding-bottom: 20px; }
 
 .service-content .panel-title {
   font-weight: bold; }

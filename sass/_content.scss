@@ -37,15 +37,17 @@ section {
     img {
         width: 100%;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-        @include ipad {}
-        @include l-phone {}
+        &:hover {
+            transition: all 0.5s;
+            opacity: 0.8;
+        }
     }
 }
 
 .slick-prev:before,
 .slick-next:before {
     color: black;
-    font-size: 24px;
+    font-size: 25px;
     @include ipad {
         display: none;
     }
@@ -114,6 +116,15 @@ section {
     h2 {
         @include course-title
     }
+    > ul {
+        list-style: none;
+        padding: 0;
+        .col-xs-6 {
+            @include l-phone {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .my-course-card {
@@ -122,12 +133,17 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 0.95);
     h3 {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center;
-        font-weight: bold;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        text-shadow: 2px 2px 3px gray;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 5px gray;
+        a {
+            color: #37761d;
+        }
+        @include ipad {
+            font-size: 26px;
+        }
     }
     center {
         a {
@@ -167,44 +183,41 @@ section {
     }
 }
 
+// coach's background-image
 .first-lesson {
     background-image: url(../img/uian.jpg);
-    @include bg-image @include ipad {
-        height: 400px;
-    }
+    height: 200px;
+    @include bg-image
 }
 
 .second-lesson {
     background-image: url(../img/hankcoach.jpg);
-    @include bg-image @include ipad {
-        height: 400px;
-    }
+    height: 200px;
+    @include bg-image
 }
 
 .third-lesson {
     background-image: url(../img/wenyen2.jpg);
-    @include bg-image @include ipad {
-        height: 400px;
-    }
+    height: 200px;
+    @include bg-image
 }
 
 .forth-lesson {
     background-image: url(../img/coachS_Mona.jpg);
-    @include bg-image @include ipad {
-        height: 400px;
-    }
+    height: 200px;
+    @include bg-image
 }
 
 .course-list {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 5px;
     padding-right: 30px;
     > li {
         > ul {
             > li {
                 display: inline-block;
-                list-style-type: circle;
-                padding: 10px 0;
+                padding-top: 10px;
+                padding-bottom: 5px;
                 border-bottom: 1px solid #D5D8DC;
                 font-size: 14px;
             }
@@ -218,6 +231,11 @@ section {
     li {
         padding: 3px 0;
     }
+}
+
+.course-default {
+    line-height: 1em;
+    padding-bottom: 20px;
 }
 
 // this is date.html's original status
