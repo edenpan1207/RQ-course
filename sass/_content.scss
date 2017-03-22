@@ -84,6 +84,9 @@ section {
     padding-bottom: 80px;
     h2 {
         @include course-title
+        @include l-phone {
+            font-size: 28px;
+        }
     }
     > ul {
         list-style: none;
