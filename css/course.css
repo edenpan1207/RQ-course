@@ -4,39 +4,34 @@
 body {
   font-family: 'Microsoft JhengHei'; }
 
-.wrap {
-  width: 100%;
-  margin: 0 auto; }
-
 section {
   padding-top: 25px;
   padding-bottom: 25px; }
 
 .course-content .slider {
-  margin: 20px auto; }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 98%; }
 
 .slick-slide {
   margin: 12px;
-  width: 330px; }
-  @media (max-width: 768px) {
-    .slick-slide {
-      width: 350px; } }
+  width: 350px; }
   @media (max-width: 568px) {
     .slick-slide {
-      width: 220px;
-      margin: 12px 6px; } }
-  .slick-slide img {
+      width: 230px;
+      margin: 12px 3px; } }
+  .slick-slide a img {
     width: 100%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25); }
-    .slick-slide img:hover {
+    .slick-slide a img:hover {
       transition: all 0.5s;
       opacity: 0.8; }
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
-  font-size: 25px; }
-  @media (max-width: 768px) {
+  color: black; }
+  @media (max-width: 796px) {
     .slick-prev:before,
     .slick-next:before {
       display: none; } }
@@ -68,16 +63,7 @@ section {
   padding-right: 10px; }
 
 .course-box {
-  padding-bottom: 80px;
-  /*> ul {
-        list-style: none;
-         padding: 0;
-        .col-xs-6 {
-            @include l-phone {
-                width: 100%;
-            }
-        }
-    }*/ }
+  padding-bottom: 80px; }
   .course-box h2 {
     display: inline;
     font-size: 36px;
@@ -86,6 +72,12 @@ section {
     @media (max-width: 568px) {
       .course-box h2 {
         font-size: 28px; } }
+  .course-box > ul {
+    list-style: none;
+    padding: 0; }
+    @media (max-width: 568px) {
+      .course-box > ul .col-xs-6 {
+        width: 100%; } }
 
 .my-course-card {
   margin-top: 20px;

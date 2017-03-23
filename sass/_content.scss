@@ -7,11 +7,6 @@ body {
     font-family: 'Microsoft JhengHei';
 }
 
-.wrap {
-    width: 100%;
-    margin: 0 auto;
-}
-
 section {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -20,26 +15,28 @@ section {
 // this is index.html
 .course-content {
     .slider {
-        margin: 20px auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+        width: 98%;
     }
 }
 
 .slick-slide {
     margin: 12px;
-    width: 330px;
-    @include ipad {
-        width: 350px;
-    }
+    width: 350px;
     @include l-phone {
-        width: 220px;
-        margin: 12px 6px;
+        width: 230px;
+        margin: 12px 3px;
     }
-    img {
-        width: 100%;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-        &:hover {
-            transition: all 0.5s;
-            opacity: 0.8;
+    a {
+        img {
+            width: 100%;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+            &:hover {
+                transition: all 0.5s;
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -47,8 +44,7 @@ section {
 .slick-prev:before,
 .slick-next:before {
     color: black;
-    font-size: 25px;
-    @include ipad {
+    @media (max-width: 796px) {
         display: none;
     }
 }
@@ -60,8 +56,7 @@ section {
         font-size: 18px;
     }
     select {
-        @include selectOp
-        @include l-phone {
+        @include selectOp @include l-phone {
             display: block;
             width: 100%;
             margin-bottom: 10px;
@@ -83,20 +78,19 @@ section {
 .course-box {
     padding-bottom: 80px;
     h2 {
-        @include course-title
-        @include l-phone {
+        @include course-title @include l-phone {
             font-size: 28px;
         }
     }
-    /*> ul {
+    > ul {
         list-style: none;
-         padding: 0;
+        padding: 0;
         .col-xs-6 {
             @include l-phone {
                 width: 100%;
             }
         }
-    }*/
+    }
 }
 
 .my-course-card {
