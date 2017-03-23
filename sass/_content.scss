@@ -17,14 +17,15 @@ section {
     .slider {
         margin-top: 20px;
         margin-bottom: 20px;
-        padding: 0;
-        width: 98%;
     }
 }
 
 .slick-slide {
     margin: 12px;
-    width: 350px;
+    width: 330px;
+    @include ipad {
+        width: 350px;
+    }
     @include l-phone {
         width: 230px;
         margin: 12px 3px;
@@ -40,6 +41,13 @@ section {
         }
     }
 }
+
+.slick-prev,
+.slick-next{
+    left: 0;
+    right: 0; 
+}
+
 
 .slick-prev:before,
 .slick-next:before {

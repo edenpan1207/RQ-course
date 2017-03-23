@@ -10,13 +10,14 @@ section {
 
 .course-content .slider {
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
-  width: 98%; }
+  margin-bottom: 20px; }
 
 .slick-slide {
   margin: 12px;
-  width: 350px; }
+  width: 330px; }
+  @media (max-width: 768px) {
+    .slick-slide {
+      width: 350px; } }
   @media (max-width: 568px) {
     .slick-slide {
       width: 230px;
@@ -27,6 +28,11 @@ section {
     .slick-slide a img:hover {
       transition: all 0.5s;
       opacity: 0.8; }
+
+.slick-prev,
+.slick-next {
+  left: 0;
+  right: 0; }
 
 .slick-prev:before,
 .slick-next:before {
