@@ -71,22 +71,21 @@ section {
   padding-left: 10px;
   padding-right: 10px; }
 
-.course-box {
-  padding-bottom: 80px; }
-  .course-box h2 {
-    display: inline;
-    font-size: 36px;
-    border-bottom: 5px solid #f05f40;
-    padding-bottom: 5px; }
-    @media (max-width: 568px) {
-      .course-box h2 {
-        font-size: 28px; } }
-  .course-box > ul {
-    list-style: none;
-    padding: 0; }
-    @media (max-width: 568px) {
-      .course-box > ul .col-xs-6 {
-        width: 100%; } }
+.course-box h2 {
+  display: inline;
+  font-size: 36px;
+  border-bottom: 5px solid #f05f40;
+  padding-bottom: 5px; }
+  @media (max-width: 568px) {
+    .course-box h2 {
+      font-size: 28px; } }
+
+.course-box > ul {
+  list-style: none;
+  padding: 0; }
+  @media (max-width: 568px) {
+    .course-box > ul .col-xs-6 {
+      width: 100%; } }
 
 .my-course-card {
   margin-top: 20px;
