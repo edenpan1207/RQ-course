@@ -17,6 +17,7 @@ section {
     .slider {
         margin-top: 20px;
         margin-bottom: 20px;
+        position: relative;
     }
 }
 
@@ -42,12 +43,14 @@ section {
     }
 }
 
+//
 .slick-prev,
-.slick-next{
-    left: 0;
-    right: 0; 
+.slick-next {
+    @media (max-width: 796px) {
+        left: 0;
+        right: 0;
+    }
 }
-
 
 .slick-prev:before,
 .slick-next:before {

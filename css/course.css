@@ -10,7 +10,8 @@ section {
 
 .course-content .slider {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
 
 .slick-slide {
   margin: 12px;
@@ -29,10 +30,11 @@ section {
       transition: all 0.5s;
       opacity: 0.8; }
 
-.slick-prev,
-.slick-next {
-  left: 0;
-  right: 0; }
+@media (max-width: 796px) {
+  .slick-prev,
+  .slick-next {
+    left: 0;
+    right: 0; } }
 
 .slick-prev:before,
 .slick-next:before {
