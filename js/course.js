@@ -21,7 +21,7 @@ $(document).ready(function() {
         var val = $(this).val();
         $('[data-coach]').show();
         $.each($('[data-coach]'), function() {
-          console.log($(this));
+            console.log($(this));
             if ($(this).data('coach') !== val) {
                 $(this).parent().parent().hide();
             } else {
@@ -31,12 +31,12 @@ $(document).ready(function() {
     });
 
     $('#location').on('change', function() {
-        var val = $(this).val(); 
+        var val = $(this).val();
         $('[data-location]').show();
-        $.each($('[data-location]'), function() { 
-            
-            if ($(this).data('location') !== val) { 
-                $(this).parent().parent().parent().hide(); 
+        $.each($('[data-location]'), function() {
+
+            if ($(this).data('location') !== val) {
+                $(this).parent().parent().parent().hide();
             } else {
                 $(this).parent().parent().parents().show();
             }
@@ -44,12 +44,12 @@ $(document).ready(function() {
     });
 
     $('#time').on('change', function() {
-        var val = $(this).val(); 
+        var val = $(this).val();
         $('[data-time]').show();
-        $.each($('[data-time]'), function() { 
-          console.log($(this));
+        $.each($('[data-time]'), function() {
+            console.log($(this));
             if ($(this).data('time') !== val) {
-                $(this).parent().parent().parent().hide(); 
+                $(this).parent().parent().parent().hide();
             } else {
                 $(this).parent().parent().parents().show();
             }
