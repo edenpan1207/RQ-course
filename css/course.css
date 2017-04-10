@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -113,6 +114,45 @@ section {
       background-color: #4a9f27;
       border: 1px solid #4a9f27; }
 
+/* 一對一教練box新排版  */
+.coach-course {
+  margin-top: 20px;
+  padding-top: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95); }
+  .coach-course h3 {
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 5px gray; }
+    .coach-course h3 a {
+      color: #37761d; }
+    @media (max-width: 768px) {
+      .coach-course h3 {
+        font-size: 26px; } }
+  .coach-course center a {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 15px; }
+    .coach-course center a:hover {
+      transition: all 0.5s;
+      border: 1px solid #37761D; }
+  .coach-course center .btn-pay {
+    background-color: #37761D; }
+    .coach-course center .btn-pay:hover {
+      background-color: #4a9f27;
+      border: 1px solid #fff; }
+  .coach-course .course-detail {
+    list-style: none; }
+    .coach-course .course-detail > li > ul {
+      list-style-type: disc;
+      margin-top: 20px; }
+      .coach-course .course-detail > li > ul > li {
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.2em; }
+
 .card-inform {
   border-radius: 30px;
   min-height: 250px;
@@ -170,12 +210,6 @@ section {
     padding-bottom: 5px;
     border-bottom: 1px solid #D5D8DC;
     font-size: 14px; }
-
-.course-detail {
-  list-style: none;
-  font-size: 16px; }
-  .course-detail li {
-    padding: 3px 0; }
 
 .course-default {
   line-height: 1em;
@@ -371,3 +405,36 @@ section {
     border-radius: 20px;
     background-color: #37761D;
     padding: 3px 6px; }
+
+/* 新增css */
+.course-search a {
+  border-radius: 20px; }
+  .course-search a i {
+    padding-left: 5px; }
+
+.card-inform {
+  position: relative; }
+  .card-inform a img {
+    width: 100%;
+    border-radius: 10px; }
+  .card-inform center a {
+    position: absolute;
+    right: 54%;
+    top: 70%;
+    padding: 12px 26px;
+    -webkit-transform: tranlateX(-50%) translateY(-50%);
+    -ms-transform: tranlateX(-50%) translateY(-50%);
+    transform: tranlateX(-50%);
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%); }
+  .card-inform center .btn-pay {
+    position: absolute;
+    right: 10%;
+    top: 70%;
+    -webkit-transform: tranlateX(-50%) translateY(-50%);
+    -ms-transform: tranlateX(-50%) translateY(-50%);
+    transform: tranlateX(-50%);
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%); }

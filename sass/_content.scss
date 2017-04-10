@@ -138,6 +138,65 @@ section {
     }
 }
 
+
+/* 一對一教練box新排版  */
+
+.coach-course {
+    margin-top: 20px;
+    padding-top: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    h3 {
+        font-size: 26px;
+        text-align: center;
+        padding-bottom: 5px;
+        text-shadow: 2px 2px 5px gray;
+        a {
+            color: #37761d;
+        }
+        @include ipad {
+            font-size: 26px;
+        }
+    }
+    center {
+        a {
+            //  margin-top: 178px;
+            //  margin-left: 3px;
+            //  margin-right: 3px;
+            //  padding: 12px 32px;
+            border: 1px solid transparent;
+            border-radius: 50px;
+            font-size: 15px;
+            &:hover {
+                transition: all 0.5s;
+                border: 1px solid $rqcolor;
+            }
+        }
+        .btn-pay {
+            background-color: #37761D;
+            &:hover {
+                background-color: #4a9f27;
+                border: 1px solid #fff;
+            }
+        }
+    }
+    .course-detail {
+        list-style: none;
+        > li {
+            > ul {
+                list-style-type: disc;
+                margin-top: 20px;
+                > li {
+                    padding: 0;
+                    font-size: 14px;
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
+}
+
 .card-inform {
     border-radius: 30px;
     min-height: 250px;
@@ -199,14 +258,6 @@ section {
                 font-size: 14px;
             }
         }
-    }
-}
-
-.course-detail {
-    list-style: none;
-    font-size: 16px;
-    li {
-        padding: 3px 0;
     }
 }
 
@@ -450,3 +501,50 @@ section {
         }
     }
 }
+
+
+/* 新增css */
+
+.course-search {
+    a {
+        border-radius: 20px;
+        i {
+            padding-left: 5px;
+        }
+    }
+}
+
+.card-inform {
+    position: relative;
+    a {
+        img {
+        width: 100%;
+        border-radius: 10px;
+        }
+    }
+    
+    center {
+        a {
+            position: absolute;
+            right: 54%;
+            top: 70%;
+            padding: 12px 26px;
+            -webkit-transform: tranlateX(-50%) translateY(-50%);
+            -ms-transform: tranlateX(-50%) translateY(-50%);
+            transform: tranlateX(-50%);
+            transform: translateY(-20%);
+        }
+        .btn-pay {
+            position: absolute;
+            right: 10%;
+            top: 70%;
+            -webkit-transform: tranlateX(-50%) translateY(-50%);
+            -ms-transform: tranlateX(-50%) translateY(-50%);
+            transform: tranlateX(-50%);
+            transform: translateY(-20%);
+        }
+    }
+}
+
+
+
