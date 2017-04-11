@@ -43,17 +43,9 @@ $(document).ready(function() {
         });
     });
 
-    $('#time').on('change', function() {
-        var val = $(this).val();
-        $('[data-time]').show();
-        $.each($('[data-time]'), function() {
-            console.log($(this));
-            if ($(this).data('time') !== val) {
-                $(this).parent().parent().parent().hide();
-            } else {
-                $(this).parent().parent().parents().show();
-            }
-        });
-    });
-
+    $('#searchCancle').click(function(e){
+        e.preventDefault();
+        $('[data-coach]').parent().parents().show();
+        $('[data-location]').parent().parent().parents().show();
+    })
 });

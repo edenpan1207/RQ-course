@@ -64,7 +64,7 @@
                             <option value="台南">台南市</option>
                             <option value="高雄">高雄市</option>
                         </select>
-                        <a href="#" class="btn btn-default">取消查詢<i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        <a href="#" class="btn btn-default" id="searchCancle">取消查詢<i class="fa fa-times-circle" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -72,69 +72,11 @@
         <section class="course-box container">
             <h2>線上教練服務</h2>
             <ul class="row">
-                <li class="col-md-4 col-xs-6">
+                <li class="col-md-3 col-sm-6 col-xs-12">
                     <div class="my-course-card">
                         <h3><a href="#">XYZ計畫</a></h3>
                         <div class="card-inform first-lesson" data-coach="羅譽寅">
                             <span class="card-status"><a href="https://www.runningquotient.com/course/coach/uian">羅譽寅 <small> 教練</small></a></span>
-                        </div>
-                        <ul class="list-group course-list">
-                            <li>
-                                <ul>
-                                    <li>個人化線上訓練計畫</li>
-                                    <br>
-                                    <li>按個人需求調整課表（頻率最高為每週一次）</li>
-                                    <br>
-                                    <li>訓練記錄分析與回饋（每天一次，如有需要）</li>
-                                    <br>
-                                    <li>訓練相關問題諮詢（不限次數）</li>
-                                    <br>
-                                    <li>比賽準備建議與配速策略分析</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <center>
-                            <a href="#" class="btn btn-default btnBsDefault">聯繫教練</a>
-                            <a href="#" class="btn btn-primary btn-pay">立刻申請</a>
-                        </center>
-                    </div>
-                </li>
-                <li class="col-md-4 col-xs-6">
-                    <div class="my-course-card">
-                        <h3><a href="#">ABC計畫</a></h3>
-                        <div class="card-inform second-lesson" data-coach="陳政翰">
-                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/hank">陳政翰 <small> 教練</small></a></span>
-                        </div>
-                        <ul class="list-group course-list">
-                            <li>
-                                <ul>
-                                    <li>個人化線上訓練計畫</li>
-                                    <br>
-                                    <li>按個人需求調整課表（頻率最高為每週一次）</li>
-                                    <br>
-                                    <li>訓練記錄分析與回饋（每天一次，如有需要）</li>
-                                    <br>
-                                    <li>訓練相關問題諮詢（不限次數）</li>
-                                    <br>
-                                    <li>比賽準備建議與配速策略分析</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <center>
-                            <a href="#" class="btn btn-default btnBsDefault">聯繫教練</a>
-                            <a href="#" class="btn btn-primary btn-pay">立刻申請</a>
-                        </center>
-                    </div>
-                </li>
-                <li class="col-md-4 col-xs-6">
-                    <div class="coach-course">
-                        <h3><a href="#">AAA計畫</a></h3>
-                        <div class="card-inform" data-coach="余文彥">
-                            <a href="#"><img src="img/wenyen2.jpg" alt=""></a>
-                            <center>
-                                <a href="#" class="btn btn-default btnBsDefault">聯繫教練</a>
-                                <a href="#" class="btn btn-primary btn-pay">立刻申請</a>
-                            </center>
                         </div>
                         <ul class="list-group course-detail">
                             <li>
@@ -151,6 +93,93 @@
                                 </ul>
                             </li>
                         </ul>
+                        <center>
+                            <a href="#" class="btn btn-default btnBsDefault">聯繫教練</a>
+                            <a href="#" class="btn btn-primary btn-pay">立刻申請</a>
+                        </center>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="my-course-card">
+                        <h3><a href="#">ABC計畫</a></h3>
+                        <div class="card-inform second-lesson" data-coach="陳政翰">
+                            <span class="card-status"><a href="https://www.runningquotient.com/course/coach/hank">陳政翰 <small> 教練</small></a></span>
+                        </div>
+                        <ul class="list-group course-detail">
+                            <li>
+                                <ul>
+                                    <li>個人化線上訓練計畫</li>
+                                    <br>
+                                    <li>按個人需求調整課表（頻率最高為每週一次）</li>
+                                    <br>
+                                    <li>訓練記錄分析與回饋（每天一次，如有需要）</li>
+                                    <br>
+                                    <li>訓練相關問題諮詢（不限次數）</li>
+                                    <br>
+                                    <li>比賽準備建議與配速策略分析</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <center>
+                            <a href="#" class="btn btn-default btnBsDefault">聯繫教練</a>
+                            <a href="#" class="btn btn-primary btn-pay">立刻申請</a>
+                        </center>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="coach-course">
+                        <h3><a href="#">超馬特訓班</a></h3>
+                        <div class="card-inform" data-coach="余文彥">
+                            <a href="#"><img src="img/wenyen2.jpg" alt=""></a>
+                            <center>
+                                <a href="#" class="btn btn-default btnBsDefault">聯繫教練</a>
+                                <a href="#" class="btn btn-primary btn-pay">立刻申請</a>
+                            </center>
+                        </div>
+                        <ul class="list-group course-detail">
+                            <li>
+                                <ul>
+                                    <li class="">教練：<a href="#">余文彥</a></li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>個人化線上訓練計畫</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>按個人需求調整課表（頻率最高為每週一次）</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>訓練記錄分析與回饋（每天一次，如有需要）</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>訓練相關問題諮詢（不限次數）</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>比賽準備建議與配速策略分析</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="coach-course">
+                        <h3><a href="#">超馬PB班</a></h3>
+                        <div class="card-inform" data-coach="余文彥">
+                            <a href="#"><img src="img/wenyen2.jpg" alt=""></a>
+                            <center>
+                                <a href="#" class="btn btn-default btnBsDefault">聯繫教練</a>
+                                <a href="#" class="btn btn-primary btn-pay">立刻申請</a>
+                            </center>
+                        </div>
+                        <ul class="list-group course-detail">
+                            <li>
+                                <ul>
+                                    <li>教練：<a href="#">余文彥</a></li>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>個人化線上訓練計畫</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>按個人需求調整課表（頻率最高為每週一次）</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>訓練記錄分析與回饋（每天一次，如有需要）</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>訓練相關問題諮詢（不限次數）</li>
+                                    <br>
+                                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>比賽準備建議與配速策略分析</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </li>
             </ul>
@@ -158,13 +187,15 @@
         <section class="course-box container">
             <h2>課程列表</h2>
             <ul class="row">
-                <li class="col-md-4 col-xs-6">
-                    <div class="my-course-card">
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="coach-course">
                         <h3><a href="#">2017姿勢跑法訓練課程(臺北場)</a></h3>
                         <div class="card-inform">
+                        <a href="#">
                             <img src="https://d3184h1qivcvfe.cloudfront.net/course_WenYen1.jpg" alt="" class="img-responsive">
+                        </a>
                         </div>
-                        <ul class="course-list course-default">
+                        <ul class="course-detail">
                             <li data-coach="余文彥">教練：<a href="https://www.runningquotient.com/course/coach/WenYen">余文彥 <small> 教練</small></a></li>
                             <br>
                             <li>主辦：Pose Method</li>
@@ -174,17 +205,18 @@
                             <li data-location="台北">地點：台北市大安區新生南路二段60號</li>
                         </ul>
                         <center>
-                            <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
+                            <a href="#" class="btn btn-default course-index-btn">了解更多</a>
                         </center>
                     </div>
                 </li>
-                <li class="col-md-4 col-xs-6">
-                    <div class="my-course-card">
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="coach-course">
                         <h3><a href="#">2017姿勢跑法訓練課程(高雄場)</a></h3>
                         <div class="card-inform">
-                            <img src="https://d3184h1qivcvfe.cloudfront.net/course_WenYen1.jpg" alt="" class="img-responsive">
+                        <a href="#"><img src="https://d3184h1qivcvfe.cloudfront.net/course_WenYen1.jpg" alt="" class="img-responsive">
+                        </a>    
                         </div>
-                        <ul class="course-list course-default">
+                        <ul class="course-detail">
                             <li data-coach="羅譽寅">教練：<a href="https://www.runningquotient.com/course/coach/uian">羅譽寅 <small> 教練</small></a></li>
                             <br>
                             <li>主辦：Pose Method</li>
@@ -194,17 +226,61 @@
                             <li data-location="高雄">地點：高雄市</li>
                         </ul>
                         <center>
-                            <a href="#" class="btn btn-default btnBsDefault">了解更多</a>
+                            <a href="#" class="btn btn-default  course-index-btn">了解更多</a>
+                        </center>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="coach-course">
+                        <h3><a href="#">2017姿勢跑法訓練課程(臺北場)</a></h3>
+                        <div class="card-inform">
+                        <a href="#">
+                            <img src="https://d3184h1qivcvfe.cloudfront.net/course_WenYen1.jpg" alt="" class="img-responsive">
+                        </a>
+                        </div>
+                        <ul class="course-detail">
+                            <li data-coach="余文彥">教練：<a href="https://www.runningquotient.com/course/coach/WenYen">余文彥 <small> 教練</small></a></li>
+                            <br>
+                            <li>主辦：Pose Method</li>
+                            <br>
+                            <li data-time="五月">時間：2017/5/20 9:00</li>
+                            <br>
+                            <li data-location="台北">地點：台北市大安區新生南路二段60號</li>
+                        </ul>
+                        <center>
+                            <a href="#" class="btn btn-default course-index-btn">了解更多</a>
+                        </center>
+                    </div>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="coach-course">
+                        <h3><a href="#">2017姿勢跑法訓練課程(臺北場)</a></h3>
+                        <div class="card-inform">
+                        <a href="#">
+                            <img src="https://d3184h1qivcvfe.cloudfront.net/course_WenYen1.jpg" alt="" class="img-responsive">
+                        </a>
+                        </div>
+                        <ul class="course-detail">
+                            <li data-coach="余文彥">教練：<a href="https://www.runningquotient.com/course/coach/WenYen">余文彥 <small> 教練</small></a></li>
+                            <br>
+                            <li>主辦：Pose Method</li>
+                            <br>
+                            <li data-time="五月">時間：2017/5/20 9:00</li>
+                            <br>
+                            <li data-location="台北">地點：台北市大安區新生南路二段60號</li>
+                        </ul>
+                        <center>
+                            <a href="#" class="btn btn-default course-index-btn">了解更多</a>
                         </center>
                     </div>
                 </li>
             </ul>
         </section>
         <!-- 付費後教練固定頭像 -->
-        <section class="coach-premium">
-            <a href="https://edenpan1207.github.io/RQ-course/pay.html"><img src="https://d3184h1qivcvfe.cloudfront.net/uian.jpg" alt="" class="img-responsive img-circle"><span class="coach-press">與教練聯繫</span>
-            </a>
-        </section>
+        <!-- <section class="coach-premium"> -->
+        <!-- <a href="https://edenpan1207.github.io/RQ-course/pay.html"><img src="https://d3184h1qivcvfe.cloudfront.net/uian.jpg" alt="" class="img-responsive img-circle"><span class="coach-press">與教練聯繫</span> -->
+        <!-- </a> -->
+        <!-- </section> -->
         <div class="footer">
             <div class="container">
                 this is footer
